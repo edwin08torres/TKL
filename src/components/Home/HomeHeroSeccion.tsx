@@ -19,7 +19,7 @@ export const HomeHeroSeccion = () => {
           </h1>
           <img
             className="w-auto rotate-45 md:rotate-12 z-0"
-            src="/assets/heroupd.png"
+            src="/assets/heroupd.webp"
             alt="logi tkl"
           />
         </div>
