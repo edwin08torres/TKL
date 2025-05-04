@@ -2,6 +2,11 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -11,7 +16,9 @@ h5 {
   font-optical-sizing: auto;
 }
 
-p,a,span{
+p,
+a,
+span {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }

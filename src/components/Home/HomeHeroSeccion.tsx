@@ -1,29 +1,34 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const HomeHeroSeccion = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, offset: 0 });
   }, []);
 
   return (
-    <>
-      <section className="bg-black w-full h-screen flex justify-center items-center overflow-hidden">
-        <div className="md:w-full md:h-screen flex justify-center ">
-          <h1
-            data-aos="fade-down"
-            className="absolute z-1 md:top-20 md:left-1/3 text-[4.5rem] left-3 md:text-[7rem] w-[23rem] text-start text-white font-extrabold leading-none"
-          >
-            Agile. Comfortable. Beautiful.
-          </h1>
-          <img
-            className="w-auto rotate-45 md:rotate-12 z-0"
-            src="/assets/heroupd.webp"
-            alt="logi tkl"
-          />
-        </div>
-      </section>
-    </>
+    <section className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-black">
+      {/* Título 100 % centrado*/}
+      <h1
+        data-aos="fade-down"
+        className="
+          absolute z-10
+          left-1/2 top-1/2 md:top-[16rem] -translate-x-1/2 -translate-y-1/2
+          max-w-[90vw] text-start
+          text-[4rem] sm:text-[7rem]
+          font-extrabold leading-none text-white
+        "
+      >
+        Agile.<br />Comfortable.<br />Beautiful.
+      </h1>
+
+      <img
+        src="/assets/heroupd.webp"
+        alt="Logitech G915 TKL"
+        className="z-0 w-auto rotate-45 md:rotate-12"
+        loading="lazy"
+      />
+    </section>
   );
 };
