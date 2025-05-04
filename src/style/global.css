@@ -1,0 +1,25 @@
+* {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+p,a,span{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.nav-link {
+  @apply hover:bg-[#8491D9] w-[5.5rem] flex items-center justify-center rounded-full transition-all duration-500 ease-initial;
+}
+
+.nav-bg {
+  backdrop-filter: blur(8px);
+}
