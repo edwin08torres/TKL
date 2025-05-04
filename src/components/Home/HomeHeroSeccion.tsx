@@ -13,7 +13,7 @@ export const HomeHeroSeccion = () => {
         data-aos="fade-down"
         className="
           absolute z-10
-          left-1/2 top-1/2 md:top-[16rem] -translate-x-1/2 -translate-y-1/2
+          left-1/2 top-1/2 lg:top-[16rem] -translate-x-1/2 -translate-y-1/2
           max-w-[90vw] text-start
           text-[4rem] sm:text-[7rem]
           font-extrabold leading-none text-white
