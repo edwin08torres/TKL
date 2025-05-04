@@ -1,6 +1,6 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const HomeHeroSeccion = () => {
   useEffect(() => {
@@ -19,10 +19,15 @@ export const HomeHeroSeccion = () => {
           font-extrabold leading-none text-white
         "
       >
-        Agile.<br />Comfortable.<br />Beautiful.
+        Agile.
+        <br />
+        Comfortable.
+        <br />
+        Beautiful.
       </h1>
 
       <img
+        data-aos="fade-down"
         src="/assets/heroupd.webp"
         alt="Logitech G915 TKL"
         className="z-0 w-auto rotate-45 md:rotate-12"
