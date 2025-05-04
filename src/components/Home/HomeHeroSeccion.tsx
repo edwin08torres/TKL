@@ -13,11 +13,10 @@ export const HomeHeroSeccion = () => {
         data-aos="fade-down"
         className="
           absolute z-10
-          left-1/2 top-1/2 lg:top-[16rem] -translate-x-1/2 -translate-y-1/2
+          left-1/2 top-1/2 md:top-[20rem] -translate-x-1/2 -translate-y-1/2
           max-w-[90vw] text-start
-          text-[4rem] sm:text-[7rem]
-          font-extrabold leading-none text-white
-        "
+          text-[4rem] sm:text-[5.5rem]
+          font-extrabold leading-none text-white"
       >
         Agile.
         <br />
@@ -27,11 +26,17 @@ export const HomeHeroSeccion = () => {
       </h1>
 
       <img
-        data-aos="fade-down"
-        src="/assets/heroupd.webp"
-        alt="Logitech G915 TKL"
-        className="z-0 w-auto rotate-45 md:rotate-12"
-        loading="lazy"
+        src="/assets/heroupd-1200.png"
+        srcSet="
+    /assets/heroupd-600.png   600w,
+    /assets/heroupd-1200.png 1200w"
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        width={1200}
+        height={800}
+        alt="Logitech G915 TKL"
+        className="z-0 h-auto w-full object-contain"
+        loading="eager"
+        decoding="async"
       />
     </section>
   );

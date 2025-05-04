@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Marquee from "react-fast-marquee";
+import { YoutubeLite } from "../layout/YoutubeLite"; // ajusta la ruta
 
 export const HomeInformationSeccion = () => {
   const marqueeWords = [
@@ -25,7 +26,6 @@ export const HomeInformationSeccion = () => {
 
   return (
     <main className="overflow-x-hidden bg-black">
-      {/* ───────────────────────── 1. Actions ───────────────────────── */}
       <section className="mx-auto max-w-8xl px-4 py-8 sm:px-6 lg:px-8 overflow-x-hidden">
         <div className="grid grid-cols-1 items-stretch gap-6 md:gap-0 lg:grid-cols-12">
           {/* imagen izquierda */}
@@ -121,17 +121,12 @@ export const HomeInformationSeccion = () => {
             </p>
           </article>
 
-          <div className="aspect-video overflow-hidden rounded-2xl lg:rounded-l-none lg:rounded-r-2xl">
-            <iframe
-              data-aos="fade-left"
-              data-aos-delay="400"
-              src="https://www.youtube.com/embed/aKPNWJZVPgY"
-              title="Logitech G915 TKL lighting demo"
-              className="h-full w-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              loading="lazy"
-            />
+          <div
+            data-aos="fade-left"
+            data-aos-delay="400"
+            className="aspect-video overflow-hidden rounded-2xl lg:rounded-l-none lg:rounded-r-2xl"
+          >
+            <YoutubeLite id="aKPNWJZVPgY" className="h-full w-full" />
           </div>
         </div>
       </section>
