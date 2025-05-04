@@ -26,8 +26,14 @@ export const HomeHeroSeccion = () => {
       </h1>
 
       <img
-        src="/assets/heroupd.webp"
-        alt="Logitec G915 TKL"
+        src="/assets/heroupd-1200.png"
+        srcSet="
+    /assets/heroupd-600.png   600w,
+    /assets/heroupd-1200.png 1200w"
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        width={1200}
+        height={800}
+        alt="Logitech G915 TKL"
         className="z-0 h-auto w-full object-contain"
         loading="eager"
         decoding="async"
