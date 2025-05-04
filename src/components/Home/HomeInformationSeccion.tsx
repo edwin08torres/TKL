@@ -1,7 +1,3 @@
-/*  HomeInformationSeccion.tsx
-    — sección informativa completa con animaciones AOS, efecto hover suave,
-      y marquee de palabras clave. 100 % lista para copiar y pegar.
-*/
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,7 +19,6 @@ export const HomeInformationSeccion = () => {
     "POWERFUL",
   ];
 
-  /* inicia AOS solo 1 vez */
   useEffect(() => {
     AOS.init({ duration: 1000, offset: 0 });
   }, []);
@@ -44,7 +39,6 @@ export const HomeInformationSeccion = () => {
             />
           </div>
 
-          {/* tarjeta de texto */}
           <article
             data-aos="fade-left"
             id="actions"
@@ -96,13 +90,11 @@ export const HomeInformationSeccion = () => {
         </div>
       </section>
 
-      {/* ───────────────────────── 2. Light ───────────────────────── */}
       <section
         id="Light"
         className="mx-auto max-w-8xl px-4 py-8 sm:px-6 lg:px-8 overflow-x-hidden"
       >
         <div className="grid grid-cols-1 items-stretch gap-6 md:gap-0 lg:grid-cols-2">
-          {/* texto */}
           <article
             data-aos="fade-right"
             data-aos-delay="300"
@@ -129,7 +121,6 @@ export const HomeInformationSeccion = () => {
             </p>
           </article>
 
-          {/* video */}
           <div className="aspect-video overflow-hidden rounded-2xl lg:rounded-l-none lg:rounded-r-2xl">
             <iframe
               data-aos="fade-left"
@@ -145,13 +136,11 @@ export const HomeInformationSeccion = () => {
         </div>
       </section>
 
-      {/* ───────────────────────── 3. Aesthetic ───────────────────────── */}
       <section
         id="Aesthetic"
         className="mx-auto max-w-8xl px-4 py-8 sm:px-6 lg:px-8 overflow-x-hidden"
       >
         <div className="flex flex-col items-stretch gap-6 lg:flex-row">
-          {/* columna izquierda */}
           <div className="flex flex-col gap-6 lg:basis-[30%]">
             <article
               data-aos="fade-right"
@@ -189,7 +178,6 @@ export const HomeInformationSeccion = () => {
             </div>
           </div>
 
-          {/* imagen principal */}
           <div className="aspect-video overflow-hidden rounded-2xl lg:basis-[70%]">
             <img
               data-aos="fade-left"
@@ -203,7 +191,6 @@ export const HomeInformationSeccion = () => {
         </div>
       </section>
 
-      {/* ───────────────────────── 4. Marquee ───────────────────────── */}
       <div className="w-full overflow-hidden py-8">
         <Marquee
           speed={50}

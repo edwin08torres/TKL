@@ -9,7 +9,6 @@ export const HomeHeroSeccion = () => {
 
   return (
     <section className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-black">
-      {/* Título 100 % centrado*/}
       <h1
         data-aos="fade-down"
         className="
